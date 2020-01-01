@@ -17,23 +17,12 @@ const runClock = () => {
 };
 
 const updateClockFace = time => {
-  let hours = (time.getHours() % 12).toString();
-  let minutes = time.getMinutes().toString();
-  let seconds = time.getSeconds().toString();
-
-  if (hours.length < 2) {
-    hours = `0${hours}`;
-  }
-
-  if (minutes.length < 2) {
-    minutes = `0${minutes}`;
-  }
-
-  if (seconds.length < 2) {
-    seconds = `0${seconds}`;
-  }
-
-  clockFace.innerHTML = `${hours} : ${minutes} : ${seconds}`;
+  clockFace.innerHTML = time.toLocaleString("en-IN", {
+    hour: "2-digit",
+    minute: "numeric",
+    second: "numeric",
+    hour12: true
+  });
 };
 
 const display = time => {
