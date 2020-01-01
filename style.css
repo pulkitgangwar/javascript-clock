@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: montserrat;
+    font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
@@ -25,5 +25,5 @@ body {
 
 .clock__face{
     font-size:10rem;
-    font-weight: 400;
+    font-weight: 500;
 }
