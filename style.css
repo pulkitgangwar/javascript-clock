@@ -21,9 +21,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color:black;
+    background-position: right;
+    background-image:url("./images/image1.svg");
 }
 
 .clock__face{
     font-size:10rem;
-    font-weight: 500;
+    font-weight: 400;
+    color:black;
+}
+
+.clock__greet{
+
+    font-size:4rem;
+    font-weight: 800;
+    color:black;
+
 }
