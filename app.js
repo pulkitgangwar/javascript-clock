@@ -4,7 +4,7 @@ const clockFace = document.querySelector(".clock__face");
 const setClock = () => {
   const time = new Date();
   let hours = (time.getHours() % 12).toString();
-  let minutes = time.getMinutes();
+  let minutes = time.getMinutes().toString();
   let seconds = time.getSeconds().toString();
 
   if (hours.length < 2) {
